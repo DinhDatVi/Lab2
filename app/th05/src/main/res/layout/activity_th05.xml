@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DAD8D8"
+    tools:context=".TH05">
+
+    <TextView
+        android:id="@+id/tv_name_b5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Name:"
+        android:textSize="18dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="@dimen/margin_base"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_name_b5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="95dp"
+        android:layout_marginRight="@dimen/margin_base"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/tv_name_b5"
+        />
+
+    <TextView
+        android:id="@+id/tv_thumbnail_b5"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Thumbnail"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/margin_base"
+        app:layout_constraintTop_toBottomOf="@+id/tv_name_b5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <Spinner
+        android:id="@+id/sn_thumbnail_b5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="95dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="@dimen/margin_base"
+        app:layout_constraintLeft_toLeftOf="@id/tv_thumbnail_b5"
+        app:layout_constraintTop_toBottomOf="@id/et_name_b5"
+        />
+
+    <TextView
+        android:id="@+id/tv_promotion_b5"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:text="Promotion"
+        android:textSize="18sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="@dimen/margin_base"
+        app:layout_constraintTop_toBottomOf="@+id/tv_thumbnail_b5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <CheckBox
+        android:id="@+id/cb_promotion_b5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintLeft_toRightOf="@+id/tv_promotion_b5"
+        app:layout_constraintTop_toBottomOf="@+id/sn_thumbnail_b5"
+        />
+
+    <Button
+        android:id="@+id/bt_addnewdish_b5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_basex2"
+        android:layout_marginTop="112dp"
+        android:backgroundTint="#B5B4B4"
+        android:padding="@dimen/margin_basex2"
+        android:text="ADD A NEW DISH"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cb_promotion_b5" />
+
+    <GridView
+        android:id="@+id/gv_listdish_b5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="2"
+        app:layout_constraintTop_toBottomOf="@+id/bt_addnewdish_b5"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
